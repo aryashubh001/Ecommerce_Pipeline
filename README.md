@@ -39,18 +39,3 @@ This simulation requires three terminal windows running concurrently.
 **1. Install Dependencies**
 ```bash
 pip install pandas faker streamlit plotly
-Start the Data Producer (Terminal 1) Generates fake user traffic.
-
-'''Bash
-
-python producer.py
-3. Start the ETL Engine (Terminal 2) Cleans and processes data every 10 seconds.
-
-Bash
-
-python etl.py
-4. Launch the Dashboard (Terminal 3) Opens the web interface.
-
-Bash
-
-python -m streamlit run dashboard.py
