@@ -72,4 +72,3 @@ Opens the web interface.
 python -m streamlit run dashboard.py
 
 ```
-python -m streamlit run dashboard.py
