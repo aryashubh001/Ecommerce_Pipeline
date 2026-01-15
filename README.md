@@ -36,21 +36,40 @@ The pipeline follows a Producer-Consumer architecture:
 ## 🚀 How to Run locally
 This simulation requires three terminal windows running concurrently.
 
+Here is the text from the image formatted with individual code blocks for each section:
+
+### 🚀 How to Run locally
+
+This simulation requires three terminal windows running concurrently.
+
 **1. Install Dependencies**
+
 ```bash
 pip install pandas faker streamlit plotly
 
-2. Start the Data Producer (Terminal 1)
+```
+
+**2. Start the Data Producer (Terminal 1)**
 Generates fake user traffic.
-Bash
+
+```bash
 python producer.py
 
-3. Start the ETL Engine (Terminal 2)
+```
+
+**3. Start the ETL Engine (Terminal 2)**
 Cleans and processes data every 10 seconds.
-Bash
+
+```bash
 python etl.py
 
-4. Launch the Dashboard (Terminal 3)
+```
+
+**4. Launch the Dashboard (Terminal 3)**
 Opens the web interface.
-Bash
+
+```bash
+python -m streamlit run dashboard.py
+
+```
 python -m streamlit run dashboard.py
